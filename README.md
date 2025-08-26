@@ -1,145 +1,146 @@
-Joven – LinkedIn Job Scraper
+# Joven – LinkedIn Job Scraper
 
-This repository contains the LinkedIn scraping module of the larger Joven project — an AI-powered assistant that helps job seekers by parsing resumes, finding relevant job openings, and streamlining applications.
+This repository contains the **LinkedIn scraping module** of the larger **Joven project** — an AI-powered assistant that helps job seekers by parsing resumes, finding relevant job openings, and streamlining applications.
 
-The scraper automates job searches on LinkedIn Jobs, extracts listings in real-time, and saves detailed job descriptions for further processing by other Joven modules.
+The scraper automates job searches on **LinkedIn Jobs**, extracts listings in real-time, and saves detailed job descriptions for further processing by other Joven modules.
 
-🚀 Features
+---
 
-Logs into LinkedIn using saved cookies (no need for repeated manual logins).
+## 🚀 Features
 
-Scrapes jobs from LinkedIn Jobs Search with filters:
+- Logs into LinkedIn using saved cookies (no repeated manual logins).
+- Scrapes jobs from **LinkedIn Jobs Search** with filters:
+  - Keyword search (`python developer` by default)
+  - Location (**India**, via `geoId`)
+  - Posted date (**last 24 hours**)
+  - Distance (**100 km** default)
+- Captures:
+  - **Job list panel** (titles, companies, locations, summaries)
+  - **Detailed job description** of the selected listing
+- Saves job details to a file (`jobDetail.txt`) every 5 minutes.
 
-Keyword search (python developer by default)
+---
 
-Location (India, via geoId)
+## 🛠️ Requirements
 
-Posted date (last 24 hours)
+- **Python 3.8+**
+- **Google Chrome** (latest version)
+- **ChromeDriver** (matching your Chrome version)  
+  👉 [Download ChromeDriver](https://chromedriver.chromium.org/downloads)
 
-Distance (default 100 km)
+### Python Dependencies
+Install dependencies with:
+```bash
+pip install selenium python-dotenv
+```
+Sure 👍 — here’s your polished **Setup/Usage section** in proper **Markdown code block** so you can copy it directly into your `README.md`:
 
-Captures:
+````markdown
+## ⚙️ Setup
 
-Job list panel (titles, companies, locations, summaries)
-
-Detailed job description of the selected listing
-
-Saves job details to a file (jobDetail.txt) every 5 minutes.
-
-🛠️ Requirements
-
-Python 3.8+
-
-Google Chrome (latest version)
-
-ChromeDriver (matching your Chrome version)
-Download from: https://chromedriver.chromium.org/downloads
-
-Python Dependencies
-
-Install all dependencies:
-
-pip install selenium beautifulsoup4 python-dotenv
-
-⚙️ Setup
-
-Clone the repo
-
+### 1. Clone the repository
+```bash
 git clone https://github.com/ABarpanda/Joven.git
 cd Joven
+````
 
+### 2. Add LinkedIn cookies
 
-Add LinkedIn cookies
+* Log into LinkedIn in Chrome.
+* Export your session cookies (e.g., using [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg)).
+* Save them as **`linkedin_cookies.pkl`** in the project root.
 
-Log into LinkedIn in Chrome.
+### 3. Environment setup
 
-Export your session cookies (e.g., using EditThisCookie
-).
+* Create a `.env` file if needed later (for credentials/config).
+  *Currently, only cookies are required.*
 
-Save them as linkedin_cookies.pkl in the project root.
+### 4. ChromeDriver setup
 
-Environment setup
-Create a .env file (if needed later for credentials/config). For now, only cookies are required.
+* Place `chromedriver.exe` in the project root or add it to your PATH.
+* Update the script path in `main.py` if needed:
 
-ChromeDriver setup
-
-Place chromedriver.exe in the project root or add it to your PATH.
-
-Update the script path if needed:
-
+```python
 service = Service(executable_path="chromedriver.exe")
+```
 
-▶️ Usage
+---
 
-Run the scraper:
+## ▶️ Usage
 
+Run the scraper in two steps:
+
+```bash
 python get_cookies.py
 python main.py
-
+```
 
 The script will:
 
-Open LinkedIn and restore your login session using cookies.
+1. Open LinkedIn and restore your login session using cookies.
+2. Perform a job search for **"python developer" in India**.
+3. Continuously scrape and:
 
-Perform a job search for "python developer" in India.
+   * Print job list panel (`scaffold-layout__list`)
+   * Save detailed job description (`scaffold-layout__detail`) into **`jobDetail.txt`**
 
-Continuously scrape and:
+---
 
-Print job list panel (scaffold-layout__list).
+## 📂 Output
 
-Save detailed job description (scaffold-layout__detail) into jobDetail.txt.
+* **Console** → Prints job list (titles, companies, etc.)
+* **File** → `jobDetail.txt` contains the latest detailed job description
 
-📂 Output
+**Example:**
 
-Console → Prints job list (titles, companies, etc.)
-
-File → jobDetail.txt contains the latest detailed job description
-
-Example:
-
+```
 Software Engineer – Microsoft
 Location: Bangalore
 Posted: 1 day ago
 
 Description:
 We are looking for a Python developer...
+```
 
-🔧 Customization
+---
 
-You can modify the search filters in the script:
+## 🔧 Customization
 
+You can modify the search filters in `main.py`:
+
+```python
 params = {
-    "distance": 100,          # Search radius
-    "f_TPR": "r86400",        # Posted in last 24h
-    "geoId": 102713980,       # India
+    "distance": 100,            # Search radius
+    "f_TPR": "r86400",          # Posted in last 24h
+    "geoId": 102713980,         # India
     "keywords": "python developer"  # Search keyword
 }
+```
+
+* Change `keywords`, `geoId`, or `distance` to match your needs.
+  👉 [LinkedIn geoId list reference](https://www.linkedin.com/help/linkedin/answer/a507663)
+
+---
+
+## ⚠️ Notes
+
+* **Use responsibly**: LinkedIn actively detects and may block aggressive scraping.
+* Add **delays/random sleep** if scraping at scale.
+* Works best with **headless mode** (optional with Selenium).
+* If cookies expire, regenerate **`linkedin_cookies.pkl`**.
+
+---
+
+## 📌 Roadmap
+
+* [ ] Store scraped jobs in **CSV/JSON** format
+* [ ] Add **multi-keyword / multi-location** scraping
+* [ ] Integrate with **resume parser** module
 
 
-Change keywords, geoId, or distance to match your needs.
-👉 LinkedIn geoId list reference
+---
 
-⚠️ Notes
+## 📄 License
 
-Use responsibly: LinkedIn actively detects and may block aggressive scraping.
-
-Add delays/random sleep if scraping at scale.
-
-Works best with headless mode (optional with Selenium).
-
-If cookies expire, regenerate linkedin_cookies.pkl.
-
-📌 Roadmap
-
- Store scraped jobs in CSV/JSON format
-
- Add multi-keyword / multi-location scraping
-
- Integrate with resume parser module
-
- Add support for proxy rotation & rate limiting
-
-📄 License
-
-This project is part of the Joven ecosystem.
-Distributed under the MIT License.
+This project is part of the **Joven ecosystem**.
+Distributed under the **MIT License**.
