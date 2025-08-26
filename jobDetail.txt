@@ -1,0 +1,103 @@
+Tower Research Capital
+Share
+Show more options
+Python Developer 
+Gurgaon, Haryana, India · Reposted 19 hours ago · Over 100 people clicked apply
+Promoted by hirer · Responses managed off LinkedIn
+Hybrid
+Full-time
+Apply
+Save
+Save Python Developer  at Tower Research Capital
+Your profile is missing required qualifications
+Show match details
+BETA
+Is this information helpful?
+Get personalized tips to stand out to hirers
+Find jobs where you’re a top applicant and tailor your resume with the help of AI.
+Try Premium for ₹0
+About the job
+Tower Research Capital is a leading quantitative trading firm founded in 1998. Tower has built its business on a high-performance platform and independent trading teams. We have a 25+ year track record of innovation and a reputation for discovering unique market opportunities.
+
+Tower is home to some of the world’s best systematic trading and engineering talent. We empower portfolio managers to build their teams and strategies independently while providing the economies of scale that come from a large, global organization.
+
+Engineers thrive at Tower while developing electronic trading infrastructure at a world class level. Our engineers solve challenging problems in the realms of low-latency programming, FPGA technology, hardware acceleration and machine learning. Our ongoing investment in top engineering talent and technology ensures our platform remains unmatched in terms of functionality, scalability and performance.
+
+At Tower, every employee plays a role in our success. Our Business Support teams are essential to building and maintaining the platform that powers everything we do — combining market access, data, compute, and research infrastructure with risk management, compliance, and a full suite of business services. Our Business Support teams enable our trading and engineering teams to perform at their best.
+
+At Tower, employees will find a stimulating, results-oriented environment where highly intelligent and motivated colleagues inspire each other to reach their greatest potential.
+
+Responsibilities:
+
+Working on team’s core python data science platform to support global trading research
+Platform has grown over the years to manage peta-byte level data while providing APIs to interact with data at granular scale
+Building ETL pipelines on top of internal and external data sources to drive business analytics
+Researching solutions to allow increasingly sophisticated visualizations
+Developing / improving frameworks to better leverage our cloud + on-prem compute and storage clusters
+Using programming languages, such as Python, Shell/Bash to architect, implement and integrate build software and productivity tools
+Developing, testing and documenting existing in-house tools to improve their quality, reliability and supportability
+Automating existing support workflows to reduce operational burden and design new tools to improve efficiency
+
+Qualifications:
+
+The ideal candidate will have:
+
+ A bachelor’s degree in computer science from a top-tier college or university
+3 to 5 years of relevant experience in designing and improving information systems.
+Proficiency with Python.
+Knowledge of NumPy, Pandas/Polars, Cython and other python data science frameworks
+Thorough understanding of Linux fundamentals and C++ compiling/linking/loading process. 
+Experience with Source Control Management, CI/CD pipelines, ELK and other observability frameworks will be an added advantage
+Brilliant problem-solving abilities. Most problems require high-availability, high-throughput and low latency solutions.
+The ability to manage multiple tasks in a fast-paced environment.
+Most importantly, the ability and willingness to quickly learn new tools, languages, paradigms and skills wherever necessary to get the job done.
+ A passion for new technologies and actively improving existing systems for users
+The drive to take initiative and pro-actively identify opportunities for efficiency and automation
+The ability to prioritize multiple tasks in a fast-paced environment
+Excellent attention to detail
+The ability to work both individually and with a team
+
+Benefits:
+
+Tower’s headquarters are in the historic Equitable Building, right in the heart of NYC’s Financial District and our impact is global, with over a dozen offices around the world.
+
+At Tower, we believe work should be both challenging and enjoyable. That is why we foster a culture where smart, driven people thrive – without the egos. Our open concept workplace, casual dress code, and well-stocked kitchens reflect the value we place on a friendly, collaborative environment where everyone is respected, and great ideas win.
+
+Our benefits include:
+
+Generous paid time off policies
+Savings plans and other financial wellness tools available in each region
+Hybrid working opportunities
+Free breakfast, lunch and snacks daily 
+In-office wellness experiences and reimbursement for select wellness expenses (e.g., gym, personal training and more) 
+Volunteer opportunities and charitable giving 
+Social events, happy hours, treats and celebrations throughout the year
+Workshops and continuous learning opportunities
+
+At Tower, you’ll find a collaborative and welcoming culture, a diverse team and a workplace that values both performance and enjoyment. No unnecessary hierarchy. No ego. Just great people doing great work – together.
+
+Tower Research Capital is an equal opportunity employer.
+Job search faster with Premium
+Access company insights like strategic priorities, headcount trends, and more
+Sanjeeb and millions of other members use Premium
+Try Premium for ₹0
+1-month free trial with 24/7 support. We’ll remind you 7 days before your trial ends.
+About the company
+Tower Research Capital
+180,065 followers
+Follow
+Financial Services 1,001-5,000 employees 1,288 on LinkedIn
+Tower Research Capital is a leading quantitative trading firm that has built its business on a high-performance platform and independent trading teams. We have a 25-year track record of innovation and a reputation for discovering unique market opportunities. At Tower, employees find a stimulating, results-oriented environment where highly intelligent and motivated colleagues inspire each other to reach their greatest potential. Tower is headquartered in New York City and employs approximately 1,200 people in more than a dozen offices globally. To learn more, visit www.tower-research.com
+
+Capital de Recherche Tower est une société de négoce quantitatif qui a bâti ses activités sur une plateforme de haut rendement et des équipes de négociation indépendantes. Nous comptons 25 ans d’expérience en innovation et une réputation de découvrir des occasions uniques sur le marché. À Tower, les employés trouvent un environnement stimulant et axé sur les résultats où des collègues très intelligents et motivés s’inspirent mutuellement pour atteindre leur plus grand potentiel. Le siège social de Tower est situé à New York et compte environ 1,200 personnes dans plus d’une douzaine de bureaux à l’échelle mondiale. Pour en savoir plus, visitez le site www.tower-research.ca.
+…
+show more
+Interested in working with us in the future?
+Members who share that they’re interested in a company may be 2x as likely to get a message from a recruiter than those who don’t. Learn more
+Learn more about Interested in working for our company
+I’m interested
+Company photos
+Page 1 of 3
+Previous
+Next
+Show more
