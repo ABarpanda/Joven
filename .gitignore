@@ -1,3 +1,4 @@
 .env
 linkedin_cookies.pkl
 jobDetail.txt
+venv/
