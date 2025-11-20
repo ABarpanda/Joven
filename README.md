@@ -35,25 +35,26 @@ pip install selenium python-dotenv
 ```
 Sure 👍 — here’s your polished **Setup/Usage section** in proper **Markdown code block** so you can copy it directly into your `README.md`:
 
-````markdown
+
 ## ⚙️ Setup
 
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/ABarpanda/Joven.git
 cd Joven
-````
+```
 
 ### 2. Add LinkedIn cookies
 
 * Log into LinkedIn in Chrome.
-* Export your session cookies (e.g., using [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg)).
+* Export your session cookies (e.g., using [Latest chrome driver](https://googlechromelabs.github.io/chrome-for-testing/)).
 * Save them as **`linkedin_cookies.pkl`** in the project root.
 
 ### 3. Environment setup
 
 * Create a `.env` file if needed later (for credentials/config).
   *Currently, only cookies are required.*
+* `pip install -r requirements.txt` to install all the dependencies.
 
 ### 4. ChromeDriver setup
 
@@ -79,11 +80,6 @@ The script will:
 
 1. Open LinkedIn and restore your login session using cookies.
 2. Perform a job search for **"python developer" in India**.
-3. Continuously scrape and:
-
-   * Print job list panel (`scaffold-layout__list`)
-   * Save detailed job description (`scaffold-layout__detail`) into **`jobDetail.txt`**
-
 ---
 
 ## 📂 Output
