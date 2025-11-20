@@ -1,2 +1,7 @@
 selenium>=4.38.0
 python-dotenv>=1.2.0
+torch>=2.9.1
+transformers>=4.35.2
+spacy>=3.5.0
+numpy>=1.24.0
+pypdf2>=3.0.0
